@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        STUDENT ENROLLMENT
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>STUDENT ENROLLMENT</center></h1>
+	<hr>
+			<div class="student-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First Name</label><label class="validation-error hide" id="FirstNameValidationError">This field is required.</label>
+                        <input type="text" name="FirstName" id="FirstName">
+                    </div>
+                    <div>
+                        <label>Middle Name</label>
+                        <input type="text" name="MiddleName" id="MiddleName">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="LastName" id="LastName">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" name="Age" id="Age">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="text" name="Gender" id="Gender">
+                    </div> <br>
+                    <div>
+                        <label>Birthday</label>
+                        <input type="date" name="Birthday" id="Birthday">
+                    </div> <br>
+                    <div>
+                        <label>Course</label>
+                        <input type="text" name="Course" id="Course">
+                    </div>
+                    <div>
+                        <label>School Year</label>
+                        <input type="number" name="SchoolYear" id="SchoolYear">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input class="sub" type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "student-table">
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Birthday</th>
+                            <th>Course</th>
+                            <th>School Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
